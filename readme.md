@@ -12,7 +12,7 @@ package main
 import (
 	"context"
 	"fmt"
-	"go.zhuzi.me/go/sessionhub"
+	"github.com/zbysir/sessionhub"
 	"time"
 )
 
