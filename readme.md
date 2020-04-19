@@ -1,10 +1,10 @@
-# WaitOne
+# SessionHub
 
 开启一个会话, 并等待它完成.
 
 用于在长连接中 如Grpc Stream, WebSocket, 服务器或客户端发送一个消息并等待对方回应, 实现在一个异步连接中同步等待回话.
 
-# Usage
+## Usage
 
 ```
 package main
@@ -54,7 +54,7 @@ func onMsg(session int64) {
 
 ```
 
-# How does it work?
+## How does it work?
 
 和http2中的stream identifier类似, 每个消息体都需要包含sessionId来识别消息属于哪个会话, 由SessionHub通知正在等待中的会话.
 
